@@ -6,11 +6,12 @@ Secondly,the agile method divides the whole project into many manageable units, 
 The third point is agile,which allows us to focus on only a subset of the product generated in each iteration, thus improving the efficiency of our product.
 The fourth point is that Agile can be prioritized by the customer,so we can maximize the business value of the game according to the customer's needs and attract more similar customers.
 The main market target is children into young adulthood. 
+# software process
+First of all, the requirements for game software are established, and the needs and ideas of teenagers for parkour games are investigated. Some ideas that most teenagers want to add to parkour games are collected. The second step is to analyze the feasibility of these ideas and screen out the ideas with high feasibility. The third step is to design the game software, design the interface of the game, the sound of the game, and the design of the game characters and the background. The fourth step is to model some items of the game and complete the initial code of the game operation. Step 5: Test the game and sort out bugs and bugs. Iterate on these five steps until the parkour game meets the needs of the majority of teenagers and finally hits the market.
 
 
-
-
-
+# algorithm
+Before programming, the general direction and risk analysis should be determined, and the initial version made after cost analysis should be released first, and the subsequent software update and upgrade should be carried out, so as to seize the market first and prevent the production of an outdated software. We program the different parts separately, taking the same thing from multiple classes and generating a new class as a rule. Categorize maps, characters, items, everything. It makes it easy to add things later, and does not need to carry out large-scale changes, only need to change the relevant part can achieve the purpose, and realize the software maintainability.
 
 
 # shedule
