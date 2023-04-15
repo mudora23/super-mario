@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>270</y>
+      <w>414</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::BackGround
+--
+-bgImage = null: BufferedImage
+-sort: int
+-flag: boolean
+-isOver = false: boolean
+-isDown = false: boolean
+-allEnemy = new ArrayList&lt;Enemy&gt;(): List&lt;Enemy&gt;
+-allObstruction = new ArrayList&lt;Obstruction&gt;(): List&lt;Obstruction&gt;
+-removeEnemy = new ArrayList&lt;Enemy&gt;(): List&lt;Enemy&gt;
+-removeObstruction = new ArrayList&lt;Obstruction&gt;(): List&lt;Obstruction&gt;
+--
++BackGround(int sort, boolean flag): ctor
++enemyStartMove(): void
++reset(): void
++getBgImage(): BufferedImage
++getAllObstruction(): List&lt;Obstruction&gt;
++getRemoveObstruction(): List&lt;Obstruction&gt;
++getSort(): int
++getAllEnemy(): List&lt;Enemy&gt;
++getRemoveEnemy(): List&lt;Enemy&gt;
++isFlag(): boolean
++isOver(): boolean
++setOver(boolean isOver): void
++isDown(): boolean
++setDown(boolean isDown): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>279</y>
+      <w>207</w>
+      <h>603</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::Mario
+--
+-x: int
+-y: int
+-bg: BackGround
+-t = null: Thread
+-xmove = 0: int
+-ymove = 0: int
+-status: String
+-showImage: BufferedImage
+-score: int
+-life: int
+-moving = 0: int
+-upTime = 0: int
+-isDead = false: boolean
+-isClear = false: boolean
+--
++Mario(int x, int y): ctor
++leftMove(): void
++rightMove(): void
++leftStop(): void
++rightStop(): void
++jump(): void
++down(): void
++dead(): void
++getX(): int
++getY(): int
++getShowImage(): BufferedImage
++run(): void
++setBg(BackGround bg): void
++setX(int x): void
++setY(int y): void
++isDead(): boolean
++getScore(): int
++setScore(int score): void
++getLife(): int
++setLife(int life): void
++isClear(): boolean
++setClear(boolean isClear): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>0</y>
+      <w>351</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::MyFrame
+--
+-allBG = new ArrayList&lt;BackGround&gt;(): List&lt;BackGround&gt;
+-mario = null: Mario
+-nowBG = null: BackGround
+-t = null: Thread
+-isStart = false: boolean
+--
++MyFrame(): ctor
++main(String[] args): void
++paint(Graphics g): void
++keyTyped(KeyEvent e): void
++keyPressed(KeyEvent e): void
++keyReleased(KeyEvent e): void
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>27</y>
+      <w>459</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::StaticValue
+--
++allMarioImage = new ArrayList&lt;BufferedImage&gt;(): List&lt;BufferedImage&gt;
++startImage = null: BufferedImage
++endImage = null: BufferedImage
++bgImage = null: BufferedImage
++allFlowerImage = new ArrayList&lt;BufferedImage&gt;(): List&lt;BufferedImage&gt;
++allTriangleImage = new ArrayList&lt;BufferedImage&gt;(): List&lt;BufferedImage&gt;
++allTurtleImage = new ArrayList&lt;BufferedImage&gt;(): List&lt;BufferedImage&gt;
++allObstructionImage = new ArrayList&lt;BufferedImage&gt;(): List&lt;BufferedImage&gt;
++mariDeadImage = null: BufferedImage
++Path = System.getProperty("user.dir") + "/bin/": String
+--
++init(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>351</y>
+      <w>513</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::Enemy
+--
+-x: int
+-y: int
+-startx: int
+-starty: int
+-type: int
+-showImage: BufferedImage
+-isLeftOrUp = true: boolean
+-upMax = 0: int
+-downMax = 0: int
+-t = null: Thread
+-imageType = 0: int
+-bg: BackGround
+--
++Enemy(int x, int y, boolean isLeft, int type, BackGround bg): ctor
++Enemy(int x, int y, boolean isUp, int type, int upMax, int downMax, BackGround bg): ctor
++run(): void
++reset(): void
++dead(): void
++getX(): int
++getY(): int
++getShowImage(): BufferedImage
++setBg(BackGround bg): void
++getType(): int
++startMove(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>18</y>
+      <w>324</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>org.wn.mario::Obstruction
+--
+-x: int
+-y: int
+-t = new Thread(this): Thread
+-type: int
+-starttype: int
+-showImage = null: BufferedImage
+-bg: BackGround
+--
++Obstruction(int x, int y, int type, BackGround bg): ctor
++reset(): void
++setImage(): void
++getShowImage(): BufferedImage
++getX(): int
++getY(): int
++getType(): int
++setType(int type): void
++run(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
