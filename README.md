@@ -23,6 +23,7 @@ There are two patterns. The first mode is mainly educational type. For children 
 In the early stage, it creates income through the way of sponsorship and adds the commodities of sponsors into the game in the form of props for the use of players. After having a certain player base, you can create some basic items in the game that you need to buy to help players pass the level. With the development of technology and the progress of society, we will continue to improve our gameplay and content.
 # Additional coponent
 we use java to finish coding the game.
+Our coding environment is integrated environment Eclipse.
 Hardware requirements
 2GHz processor
 512MB RAM for Windows XP and older versions
@@ -31,3 +32,20 @@ Hardware requirements
 4GB RAM for Windows 10
 Screen resolution 1024 x 768 with 24-bit or 32-bit color depth
 software requirements
+Windows 11            (recommended)
+Windows 10            (recommended)
+Windows 8.1
+Windows 8
+Windows 7
+Windows Vista
+Windows XP (does not apply to OPC UA–based modules)
+Windows XP Embedded (does not apply to OPC UA–based modules)
+Windows Server 2022
+Windows Server 2019
+Windows Server 2016
+Windows Server 2012 R2
+Windows Server 2012
+Windows Server 2008 R2
+Windows Server 2008
+Windows Server 2003 (does not apply to OPC UA–based modules)
+Both 32-bit and 64-bit versions of Windows operating systems can be used.
