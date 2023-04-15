@@ -39,7 +39,7 @@ public class StaticValue {
 			}
 		}
 		try {
-			startImage = ImageIO.read(new File(Path+"初始界面_看图.jpg"));
+			startImage = ImageIO.read(new File(Path+"init.jpg"));
 			bgImage = ImageIO.read(new File(Path+"firststage.jpg"));
 			endImage = ImageIO.read(new File(Path+"firststageend.jpg"));
 		} catch (IOException e) {
