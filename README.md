@@ -21,3 +21,13 @@ Before programming, the general direction and risk analysis should be determined
 # Futeure plan
 There are two patterns. The first mode is mainly educational type. For children under 6 years old, in this mode, it is mainly to help children understand Chinese characters. For every monster in the pass encountered by characters, they need to correctly write the corresponding Chinese characters in pinyin, so as to release skills and defeat monsters. In the second mode, which is mainly entertainment type, customers can collect coins in the game, buy good horses or game characters in the mall, or buy them by topping up. Every level passed will be recorded in the leaderboard, and they can compete with their friends. The one who passes the most levels will become the first place in the leaderboard. And has a special hero character and skin.The game started with only the original ordinary way to pass through, through the avoidance of obstacles to achieve final victory. With the promotion of the game and the current market demand, we will increase the number of levels and add some difficulty and item features to make the game more interesting.Young people like surprises now, so we are going to add some hidden maps for players to explore. In the future, we plan to increase online multiplayer play after meeting the requirements in terms of funding and other aspects.
 In the early stage, it creates income through the way of sponsorship and adds the commodities of sponsors into the game in the form of props for the use of players. After having a certain player base, you can create some basic items in the game that you need to buy to help players pass the level. With the development of technology and the progress of society, we will continue to improve our gameplay and content.
+# Additional coponent
+we use java to finish coding the game.
+Hardware requirements
+2GHz processor
+512MB RAM for Windows XP and older versions
+1GB RAM for Windows Vista
+2GB RAM for Windows 7 and Windows 8
+4GB RAM for Windows 10
+Screen resolution 1024 x 768 with 24-bit or 32-bit color depth
+software requirements
